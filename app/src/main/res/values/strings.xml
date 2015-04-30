@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Glipped</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_causes">Causes</string>
+    <string name="title_activity_gallery">Gallery</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_contact_us">Contact Us</string>
+
+    <!-- Contact Us -->
+    <string name="location_text_view">Locations</string>
+    <string name="location_usa">Los Angeles, CA, USA</string>
+    <string name="location_india">New Delhi, India</string>
+    <string name="mail_text_view">Email</string>
+    <string name="mail_address">info@glipped.com</string>
+    <string name="telephone_text_view">Telephone</string>
+    <string name="telephone_us">+1 202 997 7734</string>
+    <string name="telephone_india">+91 971 118 8844</string>
+    <string name="title_activity_contact_us_message">Send Us a Message</string>
+
+    <!-- About Us -->
+    <string name="about_us_primary_text_para_one">
+        Glipped is the brainchild of Gaurav and Saumya who truly believe that we are all here for a
+        reason, and all of us have the power to make a difference to the society we live in.
+        Glipped is a social platform which aims to bring donors closer to the philanthropic needs of
+        NGOs / organizations that work tirelessly to improve the social conditions of our country.
+    </string>
+    <string name="about_us_primary_text_para_two">
+        Our platform is open to individuals who are passionate about volunteering for social causes,
+        NGOs who would like to reach out to individuals or corporates for monetary and non-monetary
+        support and lastly, for corporates who are looking to strengthen their CSR activities.
+    </string>
+
+    <!-- Home -->
+    <string name="home_text_heading">
+        Making an impact in this world is hard.
+    </string>
+    <string name="home_text_body_one">
+        Glipped makes it easy. Our dedicated team helps nonprofits connect to volunteers,
+        donors and company CSR programs. And provide consulting for companies to build local
+        communities.
+    </string>
+    <string name="home_text_body_two">
+        On our platform, you can connect and network with equally enthusiastic people and
+        organizations and together make this world a better place.
+    </string>
+</resources>

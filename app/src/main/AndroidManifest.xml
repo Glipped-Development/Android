@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="glipped.com.glipped" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Home.Home"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Causes.Causes"
+            android:label="@string/title_activity_causes" >
+        </activity>
+        <activity
+            android:name=".Gallery.Gallery"
+            android:label="@string/title_activity_gallery" >
+        </activity>
+        <activity
+            android:name=".SignUp.SignUp"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+        <activity
+            android:name=".About.About"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name=".ContactUs.ContactUs"
+            android:label="@string/title_activity_contact_us" >
+        </activity>
+        <activity
+            android:name=".ContactUs.ContactUsMessage"
+            android:label="@string/title_activity_contact_us_message"
+            android:parentActivityName=".ContactUs.ContactUs" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ContactUs.ContactUs" />
+        </activity>
+    </application>
+
+</manifest>

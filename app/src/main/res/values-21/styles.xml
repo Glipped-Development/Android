@@ -1,0 +1,29 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme.-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="drawerArrowStyle">@style/AppTheme.DrawerArrowStyle</item>
+        <item name="actionBarStyle">@style/AppTheme.CustomActionBar</item>
+    </style>
+
+    <!-- 1. Actionbar drawer Arrow style -->
+    <style name="AppTheme.DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@color/Glipped_Logo_Dark_Brown</item>
+    </style>
+
+    <!-- 2. Actionbar style -->
+    <style name="AppTheme.CustomActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+
+        <item name="android:background">@color/Orange</item>
+        <item name="background">@color/Glipped_Logo_Orange</item>
+        <item name="titleTextStyle">@style/AppTheme.CustomActionBar.TitleTextStyle</item>
+    </style>
+
+    <!-- 2.1 Actionbar Text Color-->
+    <style name="AppTheme.CustomActionBar.TitleTextStyle"
+        parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/Glipped_Logo_Dark_Brown</item>
+    </style>
+
+</resources>

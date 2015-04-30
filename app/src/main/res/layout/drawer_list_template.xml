@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:background="@color/Custom_Drawer_Background_Color"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/drawer_list_element_icon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:padding="5dp"/>
+
+    <glipped.com.glipped.Tools.CustomTextViews.LatoLiteTextView
+        android:id="@+id/drawer_list_element_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15.5dp"
+        android:textSize="20sp"
+        android:textColor="@color/Glipped_Logo_Orange"/>
+
+</LinearLayout>

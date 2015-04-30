@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/causes_left_drawer_layout"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/Custom_Drawer_Background_Color"
+        android:choiceMode="singleChoice"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/drawer_glipped_logo"
+            android:layout_width="fill_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/glipped_logo_large"/>
+
+        <View
+            android:id="@+id/drawer_div_one"
+            android:layout_below="@id/drawer_glipped_logo"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="@color/Custom_Drawer_Highlight_Color"/>
+
+        <ListView
+            android:id="@+id/left_drawer_listview"
+            android:layout_below="@id/drawer_div_one"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
