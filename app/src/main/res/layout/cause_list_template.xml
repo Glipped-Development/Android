@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <glipped.com.glipped.Tools.CustomTextViews.LatoLiteTextView
+        android:id="@+id/cause_list_template_text_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/LightGrey"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:hint="Hello"/>
+
+    <ImageView
+        android:id="@+id/cause_list_template_image_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp" />
+
+</RelativeLayout>
