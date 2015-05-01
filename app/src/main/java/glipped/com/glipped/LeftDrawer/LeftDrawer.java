@@ -16,6 +16,7 @@ import glipped.com.glipped.About.About;
 import glipped.com.glipped.Causes.Causes;
 import glipped.com.glipped.ContactUs.ContactUs;
 import glipped.com.glipped.Gallery.Gallery;
+import glipped.com.glipped.Home.Home;
 import glipped.com.glipped.R;
 import glipped.com.glipped.SignUp.SignUp;
 
@@ -61,13 +62,16 @@ public class LeftDrawer {
             ArrayList<String> elementTextList = new ArrayList<>();
             ArrayList<Integer> elementIconList = new ArrayList<>();
 
-            //First Element
+            //First
+            elementTextList.add("Home");
+            elementIconList.add(R.drawable.glipped_logo_large);
+            //First
             elementTextList.add("Causes");
             elementIconList.add(R.drawable.glipped_logo_large);
-            //Second Element
+            //Second
             elementTextList.add("Gallery");
             elementIconList.add(R.drawable.glipped_logo_large);
-            //Third Element
+            //Third
             elementTextList.add("Sign Up");
             elementIconList.add(R.drawable.glipped_logo_large);
             //Fourth
@@ -91,27 +95,33 @@ public class LeftDrawer {
                     leftDrawerLayout.closeDrawer(GravityCompat.START);
 
                     switch (position) {
+
                         case 0:
+                            Intent goToHome = new Intent(AppCompatActivity, Home.class);
+                            AppCompatActivity.startActivity(goToHome);
+                            break;
+
+                        case 1:
                             Intent goToCauses = new Intent(AppCompatActivity, Causes.class);
                             AppCompatActivity.startActivity(goToCauses);
                             break;
 
-                        case 1:
+                        case 2:
                             Intent goToGallery = new Intent(AppCompatActivity, Gallery.class);
                             AppCompatActivity.startActivity(goToGallery);
                             break;
 
-                        case 2:
+                        case 3:
                             Intent goToSignUp = new Intent(AppCompatActivity, SignUp.class);
                             AppCompatActivity.startActivity(goToSignUp);
                             break;
 
-                        case 3:
+                        case 4:
                             Intent goToAbout = new Intent(AppCompatActivity, About.class);
                             AppCompatActivity.startActivity(goToAbout);
                             break;
 
-                        case 4:
+                        case 5:
                             Intent goToContactUs = new Intent(AppCompatActivity, ContactUs.class);
                             AppCompatActivity.startActivity(goToContactUs);
                             break;

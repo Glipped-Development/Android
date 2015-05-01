@@ -48,4 +48,11 @@
         On our platform, you can connect and network with equally enthusiastic people and
         organizations and together make this world a better place.
     </string>
+
+    <!-- Sign Up -->
+    <string-array name="sign_up_account_type_spinner_values">
+        <item>Non Profit</item>
+        <item>Corporate</item>
+        <item>Volunteer</item>
+    </string-array>
 </resources>

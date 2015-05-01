@@ -41,7 +41,7 @@
                 android:layout_below="@id/home_text_heading"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="20dp"
                 android:textSize="22sp"
                 android:textColor="@color/primary_text_default_material_light"
                 android:text="@string/home_text_body_one"/>

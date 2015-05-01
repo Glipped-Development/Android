@@ -11,6 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import glipped.com.glipped.LeftDrawer.LeftDrawer;
 import glipped.com.glipped.R;
@@ -48,6 +50,13 @@ public class SignUp extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+
+        setupAccountTypeSpinner();
+    }
+
+    @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
@@ -67,10 +76,7 @@ public class SignUp extends AppCompatActivity {
         return super.onOptionsItemSelected(item) || leftDrawerToggle.onOptionsItemSelected(item);
     }
 
-    /**
-     * Method to setup the left drawer
-     */
-    public void setupLeftDrawer() {
+    private void setupLeftDrawer() {
 
         leftDrawerLayout.setStatusBarBackground(R.color.Glipped_Logo_Orange);
 
@@ -99,5 +105,14 @@ public class SignUp extends AppCompatActivity {
 
         LeftDrawer leftDrawer = new LeftDrawer(leftDrawerToggle, leftDrawerLayout, SignUp.this);
         leftDrawer.populateLeftDrawer();
+    }
+
+    private void setupAccountTypeSpinner() {
+
+        Spinner spinner = (Spinner) findViewById(R.id.sign_up_account_type);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+                R.array.sign_up_account_type_spinner_values, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinner.setAdapter(adapter);
     }
 }
