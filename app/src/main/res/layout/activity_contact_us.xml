@@ -5,6 +5,7 @@
     android:id="@+id/left_drawer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Custom_White_Background"
     tools:context="glipped.com.glipped.ContactUs.ContactUs">
 
     <RelativeLayout
