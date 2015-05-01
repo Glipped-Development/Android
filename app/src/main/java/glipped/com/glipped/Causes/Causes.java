@@ -11,6 +11,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 import glipped.com.glipped.LeftDrawer.LeftDrawer;
 import glipped.com.glipped.R;
@@ -47,6 +50,13 @@ public class Causes extends AppCompatActivity {
     }
 
     @Override
+    protected void onResume() {
+        super.onResume();
+
+        setupCauseList();
+    }
+
+    @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
 
@@ -66,10 +76,7 @@ public class Causes extends AppCompatActivity {
         return super.onOptionsItemSelected(item) || leftDrawerToggle.onOptionsItemSelected(item);
     }
 
-    /**
-     * Method to setup the left drawer
-     */
-    public void setupLeftDrawer() {
+    private void setupLeftDrawer() {
 
         leftDrawerLayout.setStatusBarBackground(R.color.Glipped_Logo_Orange);
 
@@ -98,5 +105,25 @@ public class Causes extends AppCompatActivity {
 
         LeftDrawer leftDrawer = new LeftDrawer(leftDrawerToggle, leftDrawerLayout, Causes.this);
         leftDrawer.populateLeftDrawer();
+    }
+
+    private void setupCauseList() {
+
+        ArrayList<String> causeNameList = new ArrayList<>();
+        ArrayList<Integer> causeImagePathList = new ArrayList<>();
+
+        causeNameList.add("Indian Women Education");
+        causeImagePathList.add(R.drawable.indian_women_education);
+
+        causeNameList.add("San Fransisco Homeless Project");
+        causeImagePathList.add(R.drawable.homeless_project);
+
+        causeNameList.add("Delhi Dental Campaign");
+        causeImagePathList.add(R.drawable.dental_camp);
+
+        ListView causeList = (ListView) findViewById(R.id.causes_list_view);
+        CausesListAdapter causesListAdapter = new CausesListAdapter(this, causeNameList,
+                causeImagePathList);
+        causeList.setAdapter(causesListAdapter);
     }
 }
